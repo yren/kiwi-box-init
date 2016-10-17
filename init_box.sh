@@ -1,13 +1,13 @@
 #!/bin/bash
 set -x
 echo "yum update"
-sudo yum update
+sudo yum update -y
 
 echo "install screen"
-sudo yum install screen
+sudo yum install screen -y
 
 echo "install docker"
-sudo yum install -y docker && service docker start
+sudo yum install -y docker && sudo service docker start
 sudo usermod -aG docker ec2-user
 
 echo "install wget"
