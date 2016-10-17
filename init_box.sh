@@ -1,5 +1,8 @@
 #!/bin/bash
 set -x
+echo "yum update"
+sudo yum update
+
 echo "install screen"
 sudo yum install screen
 
