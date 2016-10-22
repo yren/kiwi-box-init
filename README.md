@@ -22,4 +22,6 @@ cd kiwi-box-init && source init_box.sh
 ```
 
 ### install jenkins
-
+```
+source ~/dev/kiwi-box-init/install_jenkins.sh
+```
