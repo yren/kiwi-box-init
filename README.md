@@ -1,10 +1,24 @@
 # kiwi-box-init
 
+
+## box init steps
+
+### select AMI linux
+
 ### manual install git
 ```
 mkdir ~/dev
+sudo yum update -y
 sudo yum install git -y
 ```
 
-### install docker on AWS Linux AMI
-* http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#install_docker
+### git clone kiwi-box-init
+```
+cd ~/dev
+git clone https://github.com/yren/kiwi-box-init.git kiwi-box-init
+cd kiwi-box-init && source init_box.sh
+## logout and login again
+```
+
+### install jenkins
+
