@@ -4,6 +4,7 @@
 ## box init steps
 
 ### select AMI linux
+* security group add http and https protocol
 
 ### manual install git
 ```
