@@ -2,7 +2,7 @@
 set -x
 
 echo "install docker kiwi jenkins"
-docker pull yren/kiwi-jenkins:0.1
+mkdir -p ~/.m2/repository
 
 sudo mkdir -p /rt/jenkins_home
 sudo chmod -R 777 /rt/jenkins_home
