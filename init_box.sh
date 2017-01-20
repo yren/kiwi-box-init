@@ -7,7 +7,8 @@ cp ./data/.screenrc ~/.screenrc
 
 echo "install docker"
 sudo yum update -y
-sudo yum install -y docker
+# specify docker version to 1.12.1, instead of use yum install docker
+sudo yum install -y docker-1.12.1
 sudo service docker start
 sudo usermod -a -G docker ec2-user
 
