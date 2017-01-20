@@ -25,3 +25,10 @@ cd kiwi-box-init && source init_box.sh
 ```
 source ~/dev/kiwi-box-init/install_jenkins.sh
 ```
+### setup jenkins
+* create a user in jenkins
+Configure global security -> Enable Security -> Security Realm -> select jenkins own database, allow user sign up, then create a user (lokvin).
+
+* Configure global security -> Enable Security -> Security Realm -> disable user sign up
+
+* Configure global security -> Enable Security -> Authorization -> Matrix-based security -> add all previlege to user lokvin, then apply
