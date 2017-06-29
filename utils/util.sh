@@ -5,5 +5,5 @@
 
 ## jump to ec2 box
 jumpbox(){
-  ssh -i ~/.ssh/lokvin_key.pem ec2-user@$1;
+  ssh -i ~/.ssh/some.pem ec2-user@$1;
 }
