@@ -7,7 +7,7 @@
 set -e
 
 echo "install docker ghost blog"
-if [[ !(-e /rt/host) ]]; then
+if [[ !(-e /rt/ghost) ]]; then
   echo "create dir /rt/ghost"
   sudo mkdir -p /rt/ghost 
   sudo chmod -R 777 /rt/ghost
