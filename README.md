@@ -32,3 +32,7 @@ Configure global security -> Enable Security -> Security Realm -> select jenkins
 * Configure global security -> Enable Security -> Security Realm -> disable user sign up
 
 * Configure global security -> Enable Security -> Authorization -> Matrix-based security -> add all previlege to user lokvin, then apply
+
+### create elb for jenkins
+* create elb for jenkins (public elb)
+* in godaddy config jenkins.domain point to elb 
