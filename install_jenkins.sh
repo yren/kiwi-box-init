@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 echo "install docker kiwi jenkins"
 mkdir -p ~/.m2/repository

@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 echo "add ~/.screenrc"
 rm -rf ~/.screenrc
