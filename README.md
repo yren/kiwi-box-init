@@ -39,3 +39,5 @@ Configure global security -> Enable Security -> Security Realm -> select jenkins
 ```
 source ~/dev/kiwi-box-init/install_ghost.sh
 ```
+
+### create elb for blog
