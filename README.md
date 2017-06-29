@@ -35,4 +35,6 @@ Configure global security -> Enable Security -> Security Realm -> select jenkins
 
 ### create elb for jenkins
 * create elb for jenkins (public elb)
-* in godaddy config jenkins.domain point to elb 
+* in godaddy config jenkins.domain point to elb
+
+### install ghost blog
