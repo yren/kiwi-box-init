@@ -12,12 +12,10 @@ if [[ !(-e /rt/squid) ]]; then
   echo "create dir /rt/squid"
   sudo mkdir -p /rt/squid
   sudo chmod 777 /rt/squid
-  touch /rt/squid/squid.conf
 fi
 
 docker run --name kiwi-squid -d --restart=always \
   --publish 3128:3128 \
-  --volume /rt/squid/squid.conf:/etc/squid3/squid.conf \
   --volume /rt/squid/cache:/var/spool/squid3 \
   sameersbn/squid:3.3.8-23
 
