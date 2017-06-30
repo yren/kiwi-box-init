@@ -15,7 +15,7 @@ if [[ !(-e /rt/squid/cache) ]]; then
   sudo chmod 777 /rt/squid/cache
 fi
 
-docker run --name squid -d --restart=always \
+docker run --name kiwi-squid -d --restart=always \
   --publish 3128:3128 \
   --volume /rt/squid/squid.conf:/etc/squid3/squid.conf \
   --volume /rt/squid/cache:/var/spool/squid3 \
