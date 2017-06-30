@@ -16,7 +16,7 @@ if [[ !(-e /rt/squid) ]]; then
 fi
 
 docker run --name kiwi-squid -d --restart=always \
-  --publish 4587:3128 \
+  --publish 3128:3128 \
   --volume /rt/squid/conf:/etc/squid3 \
   --volume /rt/squid/cache:/var/spool/squid3 \
   sameersbn/squid:3.3.8-23
