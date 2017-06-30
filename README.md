@@ -41,3 +41,8 @@ source ~/dev/kiwi-box-init/install_ghost.sh
 ```
 
 ### create elb for blog
+
+### install squid
+```
+source ~/dev/kiwi-box-init/install_squid.sh
+```

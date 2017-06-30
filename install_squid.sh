@@ -11,8 +11,8 @@ echo "install squid"
 if [[ !(-e /rt/squid/cache) ]]; then
   echo "create dir /rt/squid/cache"
   sudo mkdir -p /rt/squid/cache
-  sudo chmod 777 /rt/squid
-  sudo chmod 777 /rt/squid/cache
+  sudo mkdir -p /rt/squid/squid.conf
+  sudo chmod 777 -R /rt/squid
 fi
 
 docker run --name kiwi-squid -d --restart=always \
