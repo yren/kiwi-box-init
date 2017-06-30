@@ -9,7 +9,7 @@ set -e
 echo "install squid"
 
 if [[ !(-e /rt/squid) ]]; then
-  echo "create dir /rt/squid/cache"
+  echo "create dir /rt/squid"
   sudo mkdir -p /rt/squid/cache
   sudo mkdir -p /rt/squid/conf
   sudo chmod 777 -R /rt/squid
