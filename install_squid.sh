@@ -8,16 +8,16 @@
 set -e
 echo "install squid"
 
-if [[ !(-e /rt/squid/cache) ]]; then
+if [[ !(-e /rt/squid) ]]; then
   echo "create dir /rt/squid/cache"
   sudo mkdir -p /rt/squid/cache
-  sudo mkdir -p /rt/squid/squid.conf
+  sudo mkdir -p /rt/squid/conf
   sudo chmod 777 -R /rt/squid
 fi
 
 docker run --name kiwi-squid -d --restart=always \
   --publish 3128:3128 \
-  --volume /rt/squid/squid.conf:/etc/squid3/squid.conf \
+  --volume /rt/squid/conf:/etc/squid3 \
   --volume /rt/squid/cache:/var/spool/squid3 \
   sameersbn/squid:3.3.8-23
 
