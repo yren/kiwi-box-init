@@ -13,4 +13,4 @@ if [[ !(-e /rt/ghost) ]]; then
   sudo chmod -R 777 /rt/ghost
 fi
 
-docker run -d -p 80:2368 --name kiwi-ghost -v /rt/ghost:/var/lib/ghost ghost:0.19.0
+docker run -d -p 80:2368 --name kiwi-ghost -v /rt/ghost:/var/lib/ghost/content ghost:1.19.0
