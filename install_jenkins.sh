@@ -1,6 +1,6 @@
 #!/bin/bash
-
-echo "install docker kiwi jenkins"
+version=2.60.3
+echo "install kiwi-jenkins:$version"
 mkdir -p ~/.m2/repository
 
 sudo mkdir -p /rt/jenkins_home
@@ -13,4 +13,4 @@ docker run -d --name="jenkins" \
 -v $HOST_J_HOME:/var/jenkins_home/ \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -e "HOST_J_HOME=${HOST_J_HOME}" \
-yren/kiwi-jenkins:0.1
+yren/kiwi-jenkins:$version
