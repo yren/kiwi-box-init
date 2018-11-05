@@ -40,6 +40,11 @@ Configure global security -> Enable Security -> Security Realm -> select jenkins
 source ~/dev/kiwi-box-init/install_ghost.sh
 ```
 
+### install mediawiki
+```
+source ~/dev/kiwi-box-init/install_mediawiki.sh
+```
+
 ### create elb for blog
 
 ### install squid
