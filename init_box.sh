@@ -4,9 +4,6 @@ echo "add ~/.screenrc"
 rm -rf ~/.screenrc
 cp ./data/.screenrc ~/.screenrc
 
-echo "install boto3"
-sudo pip install boto3
-
 echo "install docker"
 sudo yum update -y
 # it looks like AMI only have one version docker
