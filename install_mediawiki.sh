@@ -13,4 +13,4 @@ if [[ !(-e /rt/mediawiki_data) ]]; then
   sudo chmod -R 777 /rt/mediawiki_data
 fi
 
-docker run --name kiwi-mediawiki -p 80:80 -v /rt/mediawiki_data:/var/www/data -d mediawiki:1.31.1
+docker run --name kiwi-mediawiki -p 80:80 -v /rt/mediawiki_data:/var/www/data -d mediawiki:1.32
