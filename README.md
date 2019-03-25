@@ -13,6 +13,15 @@ sudo yum update -y
 sudo yum install git -y
 ```
 
+* ssh access github
+```
+ssh-keygen -t rsa -C "email@address" -b 2048
+add public key to github
+
+git config --global user.name "abc"
+git config --global user.email "abc@com"
+```
+
 ### git clone kiwi-box-init
 ```
 cd ~/dev
