@@ -39,6 +39,9 @@ Configure global security -> Enable Security -> Security Realm -> select jenkins
 ```
 source ~/dev/kiwi-box-init/install_ghost.sh
 ```
+* add 80 port in bound to security group
+* access `http://localhost/admin`
+ 
 
 ### install mediawiki
 ```
